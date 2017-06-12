@@ -32,6 +32,7 @@ import com.farwolf.weex.pref.WeexPref_;
 import com.farwolf.weex.util.Constants;
 import com.farwolf.weex.util.HotRefreshManager;
 import com.farwolf.weex.util.Weex;
+import com.farwolf.weex.view.AndroidBug5497Workaround;
 import com.farwolf.weex.view.ToolPop;
 import com.farwolf.weex.view.ToolPop_;
 import com.taobao.weex.IWXRenderListener;
@@ -151,6 +152,7 @@ public class WeexActivity extends TitleActivityBase implements IWXRenderListener
         this.rootid= getIntent().getStringExtra("rootid");
         WXNavgationModule.addActivity(this.rootid,this);
         Page page= weexFactory.getPage(pageid);
+        AndroidBug5497Workaround.assistActivity(root);
         if(page!=null)
         {
             RenderContainer c=(RenderContainer)page.v;
