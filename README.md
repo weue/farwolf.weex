@@ -24,13 +24,20 @@ git clone  git@github.com:farwolf2010/farwolf.weex.git
 
 ## android:
 ```android:
-使用android studio :
+
+必须使用android studio :
+
 open an existing Android studio Porject
+
 选择farwolf.weex/platforms/android/vshop目录
-修改：farwolf.weex/platforms/android/vshop/local.properties 里面的
-sdk.dir=你自己的android sdk路径
+
+修改：farwolf.weex/platforms/android/vshop/local.properties 里面的 sdk.dir=你自己的android sdk路径
+
 等待下载相应插件
+
 然后菜单：build, make 无报错，run->run app 即可看到效果
+
+双击可以刷新，但是跟布局如果是scoller无效，三击可以打开二维码扫描
 
 
 
