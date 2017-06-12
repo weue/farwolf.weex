@@ -22,6 +22,7 @@
 
 git clone  git@github.com:farwolf2010/farwolf.weex.git
 
+## android:
 ```android:
 使用android studio :
 open an existing Android studio Porject
