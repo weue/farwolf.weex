@@ -40,6 +40,11 @@ open an existing Android studio Porject
 双击可以刷新，但是跟布局如果是scoller无效，三击可以打开二维码扫描
 
 
+## ios:
 
+```ios:
+使用xcode 打开：farwolf.weex/platforms/ios/vshop/vshop.xcworkspace
+run
+即可看到效果，双击刷新，三击打开二维码扫描
 
 
