@@ -75,7 +75,8 @@ public class WeexActivity extends TitleActivityBase implements IWXRenderListener
     @Bean
     public ScreenTool screenTool;
 
-
+    @ViewById
+    public ViewGroup root;
     public String url;
 
     @ViewById

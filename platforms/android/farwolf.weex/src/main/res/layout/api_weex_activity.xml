@@ -5,6 +5,7 @@
       android:background="@android:color/white"
     android:focusable="true"
     android:focusableInTouchMode="true"
+    android:id="@+id/root"
     android:orientation="vertical" >
     <com.farwolf.view.TitleBar
         android:layout_width="match_parent"
