@@ -37,7 +37,7 @@ open an existing Android studio Porject
 
 然后菜单：build, make 无报错，run->run app 即可看到效果
 
-双击可以刷新，但是跟布局如果是scoller无效，三击可以打开二维码扫描
+双击可以刷新，但是跟布局如果是scoller无效，三击可以打开二维码扫描，可以先把scroller注释掉，调完了再恢复，推荐直接用ios调，ios无此问题，调完了Android做个适配就完了
 ```
 
 ## ios:
