@@ -38,7 +38,7 @@ open an existing Android studio Porject
 然后菜单：build, make 无报错，run->run app 即可看到效果
 
 双击可以刷新，但是跟布局如果是scoller无效，三击可以打开二维码扫描
-
+```
 
 ## ios:
 
