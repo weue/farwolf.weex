@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.farwolf.vshop">
-    <!-- 管理蓝牙设备的权限 -->
-    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-    <!-- 使用蓝牙设备的权限 -->
-    <uses-permission android:name="android.permission.BLUETOOTH" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-
-    <!--下面是系统默认的-->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
@@ -34,64 +26,49 @@
         android:theme="@style/AppTheme"
         android:name="com.farwolf.vshop.VSApplication_"
         >
-        <activity android:name=".MainActivity_"
-            android:screenOrientation="portrait"
-            >
-            <!--下面移动上来的-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
-
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
-        </activity>
-
-        <activity android:name="com.farwolf.vshop.activity.tab.LaunchActivity_"
-            android:hardwareAccelerated="false"
-            android:windowSoftInputMode="adjustPan|stateHidden"
-            android:theme="@style/SplashTheme"
-            android:screenOrientation="portrait"
-            >
+        <activity android:name=".MainActivity_">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.farwolf.vshop.activity.tab.MainActivity_"
-            android:screenOrientation="portrait"
+
+        <activity android:name="com.farwolf.vshop.activity.tab.LaunchActivity_"
+            android:hardwareAccelerated="false"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:theme="@style/SplashTheme"
             >
 
+        </activity>
+        <activity android:name="com.farwolf.vshop.activity.tab.MainActivity_">
 
         </activity>
 
+
         <activity android:name=".activity.tab.MainPageActivity_"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:screenOrientation="portrait"
             >
 
         </activity>
 
         <activity android:name=".activity.tab.ClassifyActivity_"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:screenOrientation="portrait"
             >
 
         </activity>
         <activity android:name=".activity.tab.CollectionActivity_"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:screenOrientation="portrait"
             >
 
         </activity>
         <activity android:name=".activity.tab.MineActivity_"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:screenOrientation="portrait"
             >
 
         </activity>
         <activity android:name=".activity.tab.ShopingBusActivity_"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:screenOrientation="portrait"
             >
 
         </activity>

@@ -37,7 +37,7 @@ public class WXNavgationModule extends WXModuleBase {
     public void push(String url)
     {
 
-       this.pushFull(url,null,null,true);
+        this.pushFull(url,null,null,true);
     }
 
     public static void addActivity(String rootid,Activity a)

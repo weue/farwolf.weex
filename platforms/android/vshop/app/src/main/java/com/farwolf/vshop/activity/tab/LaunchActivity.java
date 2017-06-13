@@ -69,7 +69,7 @@ public class LaunchActivity extends Activity {
 //		ex.put("recycler.js",Collection);
 		ex.put("input.js",Collection);
 		ex.put("wechat.js",ShopingBus);
-		ex.put("HomeView.js",MINE);
+		ex.put("photo.js",MINE);
 		for(Object key:ex.keySet().toArray())
 		{
 			final String url=key+"";
@@ -83,7 +83,7 @@ public class LaunchActivity extends Activity {
 					{
 
 
-						startActivity(new Intent(LaunchActivity.this, com.farwolf.vshop.MainActivity_.class));
+						startActivity(new Intent(LaunchActivity.this, MainActivity_.class));
 						finish();
 						releaseImageViewResouce(img);
 //						img.setImageBitmap(null);

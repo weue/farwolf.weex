@@ -14,7 +14,7 @@ import com.farwolf.weex.module.WXNavgationModule;
 import com.farwolf.weex.module.WXNetModule;
 import com.farwolf.weex.module.WXNotifyModule;
 import com.farwolf.weex.module.WXPhotoModule;
-import com.farwolf.weex.module.WXPrinterModule;
+import com.farwolf.weex.module.WXStaticModule;
 import com.farwolf.weex.pref.WeexPref_;
 import com.taobao.weex.InitConfig;
 import com.taobao.weex.WXEnvironment;
@@ -66,8 +66,7 @@ public class Weex extends ServiceBase{
             WXSDKEngine.registerModule("notify", WXNotifyModule.class);
             WXSDKEngine.registerModule("net", WXNetModule.class);
             WXSDKEngine.registerModule("photo", WXPhotoModule.class);
-            WXSDKEngine.registerModule("printer", WXPrinterModule.class);
-
+            WXSDKEngine.registerModule("static", WXStaticModule.class);
 //            WXSDKEngine.registerComponent("switch",WXSwitch.class);
         } catch (WXException e) {
             e.printStackTrace();

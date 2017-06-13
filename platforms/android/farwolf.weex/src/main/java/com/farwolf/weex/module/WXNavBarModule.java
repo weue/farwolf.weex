@@ -1,7 +1,11 @@
 package com.farwolf.weex.module;
 
+import android.app.Activity;
 import android.graphics.Color;
+import android.os.Build;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.farwolf.util.StringUtil;
 import com.farwolf.weex.base.WXModuleBase;
@@ -33,13 +37,19 @@ public class WXNavBarModule extends WXModuleBase {
     }
 
     @JSMethod
-    public void setBack(boolean back)
+    public void setBack(boolean back,String style)
     {
         if(getTitleBar()==null)
             return;
            if(back)
            {
                getTitleBar().setBack();
+               if("black".equals(style))
+               {
+//
+                   getTitleBar().leftimage.setBackgroundResource(com.farwolf.libary.R.drawable.api_black_back_selector);
+
+               }
            }
            else
            {
@@ -47,20 +57,37 @@ public class WXNavBarModule extends WXModuleBase {
 
            }
     }
+
     @JSMethod
-    public void setMenu(boolean menu)
+    public void setStatusBarStyle( String style)
     {
-        if(getTitleBar()==null)
-            return;
-        if(menu)
-        {
-            getTitleBar().rightview.setVisibility(View.VISIBLE);
-        }
-        else
-        {
-            getTitleBar().rightview.setVisibility(View.GONE);
+        try {
+            if (Build.VERSION.SDK_INT >= 21) {
+                Window window = ((Activity)this.mWXSDKInstance.getContext()).getWindow();
+                window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+
+                if("black".equals(style))
+                {
+                    window.setStatusBarColor(Color.BLACK);
+
+
+                }
+                else
+                {
+                    window.setStatusBarColor(Color.WHITE);
+                }
+
+
+                //底部导航栏
+                //window.setNavigationBarColor(activity.getResources().getColor(colorResId));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
+
+
+
     @JSMethod
     public void hide()
     {
@@ -87,9 +114,10 @@ public class WXNavBarModule extends WXModuleBase {
     }
 
     @JSMethod
-    public void setRightText(String text,final JSCallback callback)
+    public void setRightText(String text,String color,final JSCallback callback)
     {
         getTitleBar().setRightText(text);
+        getTitleBar().setRightTextColor(color);
         getTitleBar().setRightClick(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

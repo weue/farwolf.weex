@@ -35,7 +35,7 @@ public class MainActivity extends TabHostActivity {
 	public final static String MainPage="首页";
 	public final static String Classify ="分类";
 	public final static String Collection ="关注";
-	public final static String ShopingBus ="外部";
+	public final static String ShopingBus ="购物车";
 	public final static String MINE="我的";
 	
 	SlidingMenu menu;

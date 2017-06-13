@@ -10,10 +10,10 @@ import org.androidannotations.annotations.EActivity;
 @EActivity
 public class ShopingBusActivity extends WeexActivity {
 
-//    WithoutView.js
+
     @Override
     public void init() {
-        this.title.setTitle("外部追溯");
-        render("WithoutView.js",false);
+        this.title.setTitle("购物车");
+        render("recycler.js",false);
     }
 }

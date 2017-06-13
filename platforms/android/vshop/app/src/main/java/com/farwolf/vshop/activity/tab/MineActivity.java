@@ -13,7 +13,7 @@ public class MineActivity extends WeexActivity {
 
     @Override
     public void init() {
-        this.title.setTitle("我的蜂场");
+        this.title.setTitle("我的");
 //        render("index.js",false);
     }
 }
