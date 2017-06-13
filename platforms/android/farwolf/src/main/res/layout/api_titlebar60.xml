@@ -5,7 +5,7 @@
     android:layout_width="fill_parent"
     android:layout_height="60dp"
 
-    android:background="#18d791"
+    android:background="#21AC37"
     android:id="@+id/layout"
     >
 
@@ -54,7 +54,7 @@
         android:layout_marginTop="28dp"
         android:ellipsize="end"
         android:singleLine="true"
-        android:text="@string/app_name"
+        android:text=""
         android:textColor="#ffffff"
         android:textSize="16sp" >
     </TextView>
@@ -97,10 +97,10 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="1px"
+        android:layout_height="1dp"
         android:layout_alignParentBottom="true"
-
-        android:background="#999999" />
+        android:visibility="gone"
+        android:background="#eeeeee" />
 
 
 </RelativeLayout>

@@ -5,6 +5,9 @@ import android.app.Application;
 import com.farwolf.weex.util.Weex;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
+import com.taobao.weex.WXSDKEngine;
+import com.taobao.weex.common.WXException;
+import com.taobao.weex.ui.module.WXMetaModule;
 
 import org.androidannotations.annotations.Bean;
 import org.androidannotations.annotations.EApplication;
@@ -23,9 +26,12 @@ public class VSApplication extends Application {
     public void onCreate() {
         super.onCreate();
         initUnivsalImageloader();
-        weex.init(this,"微聚分销","farwolf");
-
-
+        weex.init(this,"微聚","farwolf");
+        try{
+            WXSDKEngine.registerModule("mainmodule", WXMainPageModule.class);
+        }catch (WXException e){
+            e.printStackTrace();
+        }
     }
 
 

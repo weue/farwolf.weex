@@ -2,8 +2,6 @@ package com.farwolf.view;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
@@ -163,27 +161,6 @@ public class TitleBar extends ViewBase {
 		this.rightview.setVisibility(View.VISIBLE);
 		this.right_text.setText(text);
 		this.right_text.setVisibility(View.VISIBLE);
-
-	}
-
-
-	public void setRightTextColor(String color)
-	{
-		this.right_text.setTextColor(createColorStateList(Color.parseColor(color),Color.parseColor("#eeeeee"),Color.parseColor("#eeeeee"),Color.parseColor("#eeeeee")));
-	}
-
-	/** 对TextView设置不同状态时其文字颜色。 */
-	private ColorStateList createColorStateList(int normal, int pressed, int focused, int unable) {
-		int[] colors = new int[] { pressed, focused, normal, focused, unable, normal };
-		int[][] states = new int[6][];
-		states[0] = new int[] { android.R.attr.state_pressed, android.R.attr.state_enabled };
-		states[1] = new int[] { android.R.attr.state_enabled, android.R.attr.state_focused };
-		states[2] = new int[] { android.R.attr.state_enabled };
-		states[3] = new int[] { android.R.attr.state_focused };
-		states[4] = new int[] { android.R.attr.state_window_focused };
-		states[5] = new int[] {};
-		ColorStateList colorList = new ColorStateList(states, colors);
-		return colorList;
 	}
 
 

@@ -50,16 +50,16 @@
 	var __vue_styles__ = []
 
 	/* styles */
-	__vue_styles__.push(__webpack_require__(37)
+	__vue_styles__.push(__webpack_require__(23)
 	)
-	__vue_styles__.push(__webpack_require__(38)
+	__vue_styles__.push(__webpack_require__(24)
 	)
 
 	/* script */
-	__vue_exports__ = __webpack_require__(39)
+	__vue_exports__ = __webpack_require__(25)
 
 	/* template */
-	var __vue_template__ = __webpack_require__(40)
+	var __vue_template__ = __webpack_require__(26)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -92,7 +92,7 @@
 
 /***/ }),
 
-/***/ 37:
+/***/ 23:
 /***/ (function(module, exports) {
 
 	module.exports = {
@@ -111,7 +111,7 @@
 
 /***/ }),
 
-/***/ 38:
+/***/ 24:
 /***/ (function(module, exports) {
 
 	module.exports = {
@@ -178,7 +178,7 @@
 
 /***/ }),
 
-/***/ 39:
+/***/ 25:
 /***/ (function(module, exports) {
 
 	"use strict";
@@ -186,7 +186,6 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-	//
 	//
 	//
 	//
@@ -282,7 +281,7 @@
 
 /***/ }),
 
-/***/ 40:
+/***/ 26:
 /***/ (function(module, exports) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -308,7 +307,6 @@
 	    },
 	    attrs: {
 	      "placeholder": "普通的text",
-	      "autofocus": "false",
 	      "type": "text",
 	      "returnKeyType": "next",
 	      "value": (_vm.name)
@@ -365,18 +363,6 @@
 	    attrs: {
 	      "placeholder": "type text，password，url，email，tel",
 	      "type": "tel",
-	      "maxlength": "10",
-	      "returnKeyType": "done"
-	    }
-	  }), _c('input', {
-	    ref: "input",
-	    staticClass: ["input"],
-	    staticStyle: {
-	      fontWeight: "bold"
-	    },
-	    attrs: {
-	      "placeholder": "type text，password，url，email，tel",
-	      "type": "number",
 	      "maxlength": "10",
 	      "returnKeyType": "done"
 	    }
